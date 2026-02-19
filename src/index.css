@@ -1,5 +1,5 @@
 /* ===== Element Farm Solutions — Global Styles ===== */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Source+Sans+3:wght@300;400;500;600;700&display=swap');
 
 :root {
   /* Brand Colors from Logo */
@@ -25,8 +25,8 @@
   --gray-900: #212529;
 
   /* Typography */
-  --font-heading: 'Playfair Display', Georgia, serif;
-  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-heading: 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-body: 'Source Sans 3', -apple-system, BlinkMacSystemFont, sans-serif;
 
   /* Spacing */
   --section-padding: 100px 0;
@@ -52,7 +52,9 @@
 }
 
 /* ===== Reset ===== */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -85,11 +87,17 @@ img {
   display: block;
 }
 
-ul, ol {
+ul,
+ol {
   list-style: none;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--font-heading);
   line-height: 1.2;
   color: var(--navy);
@@ -271,9 +279,17 @@ h1, h2, h3, h4, h5, h6 {
   flex-shrink: 0;
 }
 
-.dropdown-icon.agriculture { background: rgba(74, 139, 63, 0.1); }
-.dropdown-icon.livestock { background: rgba(212, 118, 44, 0.1); }
-.dropdown-icon.waste { background: rgba(194, 59, 34, 0.1); }
+.dropdown-icon.agriculture {
+  background: rgba(74, 139, 63, 0.1);
+}
+
+.dropdown-icon.livestock {
+  background: rgba(212, 118, 44, 0.1);
+}
+
+.dropdown-icon.waste {
+  background: rgba(194, 59, 34, 0.1);
+}
 
 .dropdown-divider {
   height: 1px;
@@ -350,10 +366,23 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @keyframes float-particle {
-  0% { transform: translateY(100vh) rotate(0deg); opacity: 0; }
-  10% { opacity: 1; }
-  90% { opacity: 1; }
-  100% { transform: translateY(-10vh) rotate(720deg); opacity: 0; }
+  0% {
+    transform: translateY(100vh) rotate(0deg);
+    opacity: 0;
+  }
+
+  10% {
+    opacity: 1;
+  }
+
+  90% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(-10vh) rotate(720deg);
+    opacity: 0;
+  }
 }
 
 .hero-content {
@@ -419,8 +448,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @keyframes fadeInUp {
-  from { opacity: 0; transform: translateY(24px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* ===== BUTTONS ===== */
@@ -584,9 +620,11 @@ h1, h2, h3, h4, h5, h6 {
 .approach-card.educate::before {
   background: linear-gradient(90deg, var(--green), var(--green-light));
 }
+
 .approach-card.rejuvenate::before {
   background: linear-gradient(90deg, var(--navy), var(--navy-light));
 }
+
 .approach-card.recycle::before {
   background: linear-gradient(90deg, var(--orange), #e89040);
 }
@@ -617,10 +655,12 @@ h1, h2, h3, h4, h5, h6 {
   background: rgba(74, 139, 63, 0.1);
   color: var(--green);
 }
+
 .approach-card.rejuvenate .approach-step-number {
   background: rgba(27, 58, 92, 0.1);
   color: var(--navy);
 }
+
 .approach-card.recycle .approach-step-number {
   background: rgba(212, 118, 44, 0.1);
   color: var(--orange);
@@ -940,12 +980,29 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
 }
 
-.education-card-image.soil { background: linear-gradient(135deg, #5a3e2b, #8B6914); }
-.education-card-image.water { background: linear-gradient(135deg, #1a5276, #2980b9); }
-.education-card-image.organic { background: linear-gradient(135deg, var(--green-dark), var(--green-light)); }
-.education-card-image.crop { background: linear-gradient(135deg, var(--orange), #e8a040); }
-.education-card-image.regen { background: linear-gradient(135deg, var(--navy), var(--green)); }
-.education-card-image.pest { background: linear-gradient(135deg, #7d5a50, #a17c6b); }
+.education-card-image.soil {
+  background: linear-gradient(135deg, #5a3e2b, #8B6914);
+}
+
+.education-card-image.water {
+  background: linear-gradient(135deg, #1a5276, #2980b9);
+}
+
+.education-card-image.organic {
+  background: linear-gradient(135deg, var(--green-dark), var(--green-light));
+}
+
+.education-card-image.crop {
+  background: linear-gradient(135deg, var(--orange), #e8a040);
+}
+
+.education-card-image.regen {
+  background: linear-gradient(135deg, var(--navy), var(--green));
+}
+
+.education-card-image.pest {
+  background: linear-gradient(135deg, #7d5a50, #a17c6b);
+}
 
 .education-tag {
   position: absolute;
@@ -1008,7 +1065,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 16px;
 }
 
-.contact-info > p {
+.contact-info>p {
   color: var(--gray-700);
   line-height: 1.8;
   margin-bottom: 36px;
